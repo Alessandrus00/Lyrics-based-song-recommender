@@ -108,7 +108,25 @@ class Loader():
         df = pd.concat(df_list, ignore_index = True)
         return df
 
+
 loader = Loader(in_path = './input/song_lyrics.csv', out_path = './input/data')
 df_orig = loader.load_pickle(1)
-df_sampled = df_orig.sample(frac=0.01, random_state=1)
+df_sampled = df_orig.sample(5000, random_state=1)
 df_sampled.to_csv("./data/song_lyrics_sampled.csv", header='true', index=False)
+print("Total number of songs (sample): ", len(df_sampled))
+
+
+tag_counts = {'pop': 0, 'rap': 0, 'rock': 0, 'misc': 0, 'country': 0, 'rb': 0}
+for key in tag_counts.keys():
+    count = (df_orig['tag'] == key).sum()
+    tag_counts[key] = count
+    
+#print(tag_counts)
+
+# Sample specified number of rows from each group
+n_songs_per_genre = int(5000/len(tag_counts.keys()))
+balanced_sample = df_orig.groupby('tag').apply(lambda x: x.sample(n_songs_per_genre,random_state=1),include_groups=False)
+
+print("Total number of songs (balanced sample): ", len(balanced_sample))
+#print(balanced_sample.head())
+balanced_sample.to_csv("./data/song_lyrics_sampled_balanced.csv", header='true', index=False)
