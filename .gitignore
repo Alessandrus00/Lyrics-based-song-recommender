@@ -1,4 +1,4 @@
 .DS_Store
 input/song_lyrics.csv
-models/cc.en.300.bin
+models/
 input/data
