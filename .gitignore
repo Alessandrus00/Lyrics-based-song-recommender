@@ -2,3 +2,4 @@
 input/song_lyrics.csv
 models/
 input/data
+data/simple_features/*.csv
