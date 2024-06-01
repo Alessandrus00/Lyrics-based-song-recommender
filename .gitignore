@@ -4,3 +4,4 @@ models/
 input/data
 data/simple_features/*.csv
 data/simple_features/*.npy
+scripts/__pycache__
