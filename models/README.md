@@ -4,10 +4,10 @@ In particular, from the root directory of the project you should lunch:
 
 For the Fast text model (cc.en.300.bin)
 ```bash
-bash download_fasttext.sh
+bash models/download_fasttext.sh
 ```
 
 For the Universal Sentence Encoder model (transformer-based variant v2)
 ```bash
-bash download_use.sh
+bash models/download_use.sh
 ```
