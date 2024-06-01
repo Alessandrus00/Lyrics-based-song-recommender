@@ -1,7 +1,10 @@
 .DS_Store
 input/song_lyrics.csv
-models/
+models/fasttext
+models/others
+models/use
 input/data
 data/simple_features/*.csv
 data/simple_features/*.npy
 scripts/__pycache__
+data/tfidf_embeddings.npy
