@@ -113,6 +113,7 @@ dependencies:
       - kiwisolver==1.4.5
       - kneed==0.8.5
       - langcodes==3.4.0
+      - langdetect==1.0.9
       - language-data==1.2.0
       - libclang==18.1.1
       - lxml==5.2.2

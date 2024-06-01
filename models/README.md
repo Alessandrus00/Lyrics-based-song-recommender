@@ -1,16 +1,13 @@
-# Pute here your Fast Text model (cc.en.300.bin file)
+## Models used in this project
+Most of the models will be downloaded and stored on the fly. The only exceptions are large files, for which manual downloading is necessary.
+In particular, from the root directory of the project you should lunch:
 
-Can be downloaded by uncommenting the following line in fasttext.ipynb:
-```python
-fasttext.util.download_model(
-    'en', 
-    if_exists='ignore', 
-    model_dir=./models/
-    )
+For the Fast text model (cc.en.300.bin)
+```bash
+bash download_fasttext.sh
 ```
 
-Or by using the following bash command from the root directory:
+For the Universal Sentence Encoder model (transformer-based variant v2)
 ```bash
-wget -P ./models/ https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.bin.gz
-gunzip ./models/cc.en.300.bin.gz
+bash download_use.sh
 ```

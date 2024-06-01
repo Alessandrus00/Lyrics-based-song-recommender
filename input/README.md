@@ -1,1 +1,0 @@
-Here you should put the large genius csv file. By running python ./input/sample.py from the root it will be created the sampled version under ./data
