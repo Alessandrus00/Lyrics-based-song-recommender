@@ -160,7 +160,7 @@ def best_worst_recommendations(args):
                 embedding = apply_pca(embedding,args.method)
                 train_embeddings = apply_pca(train_embeddings,args.method)
                 
-            # get cluster labesl if aclustering is specified in args
+            # get cluster labels if a clustering is specified in args
             if args.clustering:
                 cluster_label = get_cluster_labels(embedding,args.method)
                 train_cluster_labels= get_cluster_labels(train_embeddings,args.method)
@@ -228,7 +228,7 @@ def top_n_recommendations(args):
         embedding = apply_pca(embedding,args.method)
         train_embeddings = apply_pca(train_embeddings,args.method)
         
-    # get cluster labesl if aclustering is specified in args
+    # get cluster labels if a clustering is specified in args
     if args.clustering:
         cluster_label = get_cluster_labels(embedding,args.method)
         train_cluster_labels= get_cluster_labels(train_embeddings,args.method)
