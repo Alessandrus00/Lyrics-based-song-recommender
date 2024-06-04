@@ -53,4 +53,16 @@ python scripts/evaluate.py \
 ### Jupiter notebooks
 To see more in details what has been done code-wise, and follow more clearly all the steps that make this project work, we created some jupyter notebooks under `notebooks`. Enjoy!
 
+### Evaluation forms and results
+
+The links to the 5 evaluation forms are available at the following links (submission has been closed):
+
+- Form [Query 1]("https://forms.gle/4yNYVwWRPDa6nHKc8")
+- Form [Query 2]("https://forms.gle/ndfx2qw2ZSvts49aA")
+- Form [Query 3]("https://forms.gle/4nV9Wb9j6LFoMDjLA")
+- Form [Query 4]("https://forms.gle/rF6arS1dTyCiBR3U9")
+- Form [Query 5]("https://forms.gle/X3uFKrDRxk6zVG8M8")
+
+The results can be viewed in [this shared Google sheet]("https://docs.google.com/spreadsheets/d/1Bfy9vEGwOHaGMFiaMv3-XBb-j32NRnx5C8EMKMRV0-o/edit?usp=sharing").
+
 
