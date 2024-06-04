@@ -18,4 +18,5 @@ wordcloud==1.9.3
 langdetect==1.0.9
 kneed==0.8.5
 tabulate==0.9.0
+pyLDAvis==3.4.1
 ipykernel==6.29.4
