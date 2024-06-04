@@ -4,19 +4,28 @@ This is the official repo for the NLP course 2023/2024 - final project at Univer
 
 This study aims at evaluating from a qualitative perspective three song recommendation systems designed by us, that use song lyrics as unique source of knowledge. The first system uses the sentiment scores, topic modeling (LDA) and TF-IDF vector to build a unified embedding vector for each lyrics, and then compute cosine similarities among them to sort out the most similar lyrics (embeddings). The other two systems have the same goal, but they differ in the creation of the embeddings by using Fast Text and Universal Sentence Encoder models. More details can be found in the original paper `report.pdf`.
 
+## Repo structure: important files
+
+- Training data: `data/lyrics_proc_train.csv`
+- Test data (queries): `data/lyrics_proc_test.csv`
+- TF-IDF train embeddings: `tfidf_embeddings.npy.zip`
+- fastText train embeddings: `fasttext_embeddings.npy`
+- USE train embeddings: `use_embeddings.npy`
+- fastText model: `models/fasttext/cc.en.300.bin` (after download)
+- USE model: `models/use` (after download)
+- LDA model and TF-IDF vectors: `models/others`
+- Notebook for dataset preprocessing: `notebooks/dataset_preprocessing.ipynb`
+- Python scripts: `scripts`
+- Test songs (queries) with best and bad recommendations used in the evaluation forms: `test`
+
 ## Getting started
 
 ### Environment setup
-In order to use our systems, you need to create a conda environment containing all the necessary packages (make sure you have conda up and running!). To simplify your life, we created the file `environment.yml`, that can be used as follow to create the environment for you:
-
-```bash
-conda env create -f environment.yml
-```
-
-Alternatively, you could create it by yourself (python version is 3.12) and install all the required packages present in `requirements.txt` via pip as follows:
+In order to use our systems, you need to create a conda environment containing all the necessary packages (make sure you have conda up and running!). To facilitate the process, hit the following bash commands in the root folder of the project:
 
 ```bash
 conda create --name nlp python=3.12
+conda activate nlp
 pip install -r requirements.txt
 ```
 
@@ -53,7 +62,7 @@ python scripts/evaluate.py \
 ### Jupiter notebooks
 To see more in details what has been done code-wise, and follow more clearly all the steps that make this project work, we created some jupyter notebooks under `notebooks`. Enjoy!
 
-### Qualitative study results
+### Evaluation forms and results
 
 The results can be viewed in [this shared Google sheet](https://docs.google.com/spreadsheets/d/1Bfy9vEGwOHaGMFiaMv3-XBb-j32NRnx5C8EMKMRV0-o/edit?usp=sharing).
 

@@ -1,7 +1,6 @@
 .DS_Store
 input/song_lyrics.csv
 models/fasttext
-models/others
 models/use
 input/data
 data/simple_features/*.csv
