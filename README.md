@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 
 ### Fast Text and USE models
-In order to execute Fast Text and USE models, you need to download their corresponding files locally. You can do it by lunching the scripts:
+In order to execute Fast Text and USE models, you need to download their corresponding files locally. You can do it by launching the scripts:
 
 For the Fast text model (cc.en.300.bin)
 ```bash
