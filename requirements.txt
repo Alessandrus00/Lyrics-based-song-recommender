@@ -15,3 +15,7 @@ en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_
 tensorflow==2.16.1
 tensorflow-hub==0.16.1
 wordcloud==1.9.3
+langdetect==1.0.9
+kneed==0.8.5
+tabulate==0.9.0
+ipykernel==6.29.4
