@@ -249,7 +249,7 @@ def top_n_recommendations(args):
     
     # print out the dataset
     df_out = pd.DataFrame({
-        'id': top_n_indices,
+        'id': df_train.loc[top_n_indices, 'id'],
         'similarity': similarity_scores[top_n_indices]
     })
     
